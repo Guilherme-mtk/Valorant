@@ -9,8 +9,11 @@ const GlobalStyle = createGlobalStyle`
     outline: none;
     border: none;
     box-sizing: border-box;
+    list-style: none;
     body {
     margin: 0;
+ 
+    }
   }
 `;
 

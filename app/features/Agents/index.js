@@ -8,6 +8,7 @@ import saga from './saga';
 import messages from './messages';
 import selectAgents from './selectors';
 import { Container } from './styles';
+import logo from './assets/logo.jpg';
 
 function Agents() {
   const dispatch = useDispatch();
@@ -25,17 +26,32 @@ function Agents() {
 
   return (
     <Container>
-      {agents.map(({ uuid, fullPortraitV2, displayName, role }) => (
+      <div className="menu">
+        <ul>
+          <img src={logo} alt="logo" width={70} height={65} />
+          <li>
+            <a href="#1">Agents</a>
+          </li>
+          <li>
+            <a href="#2">Maps</a>
+          </li>
+          <li>
+            <a href="#3">Arms</a>
+          </li>
+        </ul>
+      </div>
+      {agents.map(({ uuid, fullPortraitV2, displayName }) => (
         <div className="Champions" key={uuid}>
           <img
             src={fullPortraitV2}
             alt="agents"
             id={uuid}
-            width={500}
+            width={480}
             height={500}
           />
-          <p>{displayName}</p>
-          <p>{role.displayName}</p>
+          <p>
+            <a href="#4">{displayName}</a>
+          </p>
         </div>
       ))}
       <Helmet>
