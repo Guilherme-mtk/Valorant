@@ -9,16 +9,19 @@
 
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-
 import { hot } from 'react-hot-loader/root';
 import Agents from 'features/Agents/Loadable';
 import NotFoundPage from 'features/NotFoundPage/Loadable';
+import AgentsDetails from '../AgentsDetails/agentsDetails';
 
 function App() {
   return (
     <div>
       <Switch>
         <Route exact path="/" component={Agents} />
+        <Route path="/agents/:uuid">
+          <AgentsDetails />
+        </Route>
         <Route component={NotFoundPage} />
       </Switch>
     </div>

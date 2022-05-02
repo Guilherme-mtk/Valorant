@@ -11,34 +11,9 @@ export const Container = styled.section`
   background-image: url(${imghomes});
   background-position: center;
 
-  .menu {
-    width: 100%;
-    display: flex;
-    background-color: #1b252d;
-    height: 60px;
-    align-items: center;
-    margin-bottom: 40px;
-  }
-
-  ul {
-    display: flex;
-    margin: 60px;
-  }
-
-  li {
-    align-items: center;
-    font-size: 1.5rem;
-    margin: 20px;
-  }
-
   a {
     text-decoration: none;
     color: white;
-  }
-
-  a:hover {
-    color: #ff4655;
-    height: 60px;
   }
 
   .Champions {
