@@ -13,12 +13,14 @@ import { hot } from 'react-hot-loader/root';
 import Agents from 'features/Agents/Loadable';
 import NotFoundPage from 'features/NotFoundPage/Loadable';
 import AgentsDetails from '../AgentsDetails/agentsDetails';
+import Maps from '../Maps/index';
 
 function App() {
   return (
     <div>
       <Switch>
         <Route exact path="/" component={Agents} />
+        <Route exact path="/maps" component={Maps} />
         <Route path="/agents/:uuid">
           <AgentsDetails />
         </Route>

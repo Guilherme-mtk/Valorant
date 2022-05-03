@@ -12,10 +12,10 @@ function header() {
             <a href="/">Agents</a>
           </li>
           <li>
-            <a href="#2">Maps</a>
+            <a href="/maps">Maps</a>
           </li>
           <li>
-            <a href="#3">Arms</a>
+            <a href="#3">Weapons</a>
           </li>
         </ul>
       </div>
