@@ -15,7 +15,7 @@ function header() {
             <a href="/maps">Maps</a>
           </li>
           <li>
-            <a href="#3">Weapons</a>
+            <a href="/weapons">Weapons</a>
           </li>
         </ul>
       </div>

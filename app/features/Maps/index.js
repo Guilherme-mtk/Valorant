@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useInjectReducer, useInjectSaga } from 'redux-injectors';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { getMaps, reducer } from './slice';
 import saga from './saga';
 import selectMaps from './selectors';
@@ -17,15 +18,15 @@ const Mapas = () => {
     dispatch(getMaps());
   }, []);
 
-  console.log('aconteceu', maps);
-
   return (
     <Maps>
       <Header />
       {maps.map(({ uuid, splash, displayName }) => (
         <div key={uuid} className="Mapas">
           <img src={splash} alt="maps" width={480} height={500} />
-          <p>{displayName}</p>
+          <Link to={`/maps/${uuid}`}>
+            <p>{displayName}</p>
+          </Link>
         </div>
       ))}
     </Maps>

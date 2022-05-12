@@ -1,32 +1,36 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 export const initialState = {
-  fetchingDetails: false,
+  fetchingAgentsDetails: false,
   data: [],
 };
 
-const detailsSlice = createSlice({
-  name: 'details',
+const agentsdetailsSlice = createSlice({
+  name: 'agentsdetails',
   initialState,
   reducers: {
-    getDetails(state) {
-      state.fetchingDetails = true;
+    getAgentsDetails(state) {
+      state.fetchingAgentsDetails = true;
       state.loaded = false;
-      state.errorDetails = null;
+      state.errorAgentsDetails = null;
     },
-    loadDetails(state, action) {
-      state.fetchingDetails = false;
+    loadAgentsDetails(state, action) {
+      state.fetchingAgentsDetails = false;
       state.loaded = true;
-      state.data = action.payload.agents;
-      state.errorDetails = null;
+      state.data = action.payload.agentsdetails;
+      state.errorAgentsDetails = null;
     },
-    errorDetails(state, action) {
-      state.fetchingDetails = false;
-      state.errorDetails = action.payload.error;
+    errorAgentsDetails(state, action) {
+      state.fetchingAgentsDetails = false;
+      state.errorAgentsDetails = action.payload.error;
     },
   },
 });
 
-export const { getDetails, loadDetails, errorDetails } = detailsSlice.actions;
+export const {
+  getAgentsDetails,
+  loadAgentsDetails,
+  errorAgentsDetails,
+} = agentsdetailsSlice.actions;
 
-export const { reducer } = detailsSlice;
+export const { reducer } = agentsdetailsSlice;
