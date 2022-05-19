@@ -12,7 +12,7 @@ export function* getAgentsDetailsSaga() {
       axios.get,
       'https://valorant-api.com/v1/agents/{uuid}',
     );
-
+    console.log(loaded);
     yield put(loadAgentsDetails({ agentsdetails: loaded.data.data }));
   } catch (err) {
     yield put(errorAgentsDetails({ error: err }));

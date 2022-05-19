@@ -22,15 +22,9 @@ const Agentes = () => {
   return (
     <Details>
       <Header />
-      {agentsdetails.map(({ fullPortrait, description }) => (
+      {agentsdetails.map(({ displayName }) => (
         <div key={uuid} className="Details">
-          <img
-            src={fullPortrait}
-            alt="agentsdetails"
-            width={480}
-            height={500}
-          />
-          <h1>{description}</h1>
+          <h1>{displayName}</h1>
         </div>
       ))}
       <h1>agentsDetails {uuid}</h1>

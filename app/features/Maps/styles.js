@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import imghome from '../Agents/assets/agents.jpg';
+
 import imghomes from '../Agents/assets/home.jpg';
 
 export const Maps = styled.section`
@@ -10,6 +10,7 @@ export const Maps = styled.section`
   justify-content: center;
   background-image: url(${imghomes});
   background-position: center;
+  overflow-x: hidden;
 
   a {
     text-decoration: none;
@@ -17,11 +18,9 @@ export const Maps = styled.section`
   }
 
   .Mapas {
-    /* background-color: #1b252d; */
-    border-radius: 8%;
-    margin: 20px 20px;
+    height: 10%;
+    margin: 20px 30px;
     justify-content: center;
-    background-image: url(${imghome});
   }
 
   img {
@@ -33,5 +32,8 @@ export const Maps = styled.section`
     font-size: 1.5rem;
     text-align: center;
     color: white;
+    background-color: #ff4655;
+  }
+  @media (max-width: 700px) {
   }
 `;

@@ -41,4 +41,12 @@ export const Header = styled.div`
     text-align: center;
     color: white;
   }
+  @media (max-width: 700px) {
+    .menu {
+      width: 500px;
+    }
+    li {
+      font-size: 1.2rem;
+    }
+  }
 `;

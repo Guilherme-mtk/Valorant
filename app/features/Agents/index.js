@@ -27,7 +27,13 @@ function Agents() {
       <Header />
       {agents.map(({ uuid, fullPortraitV2, displayName }) => (
         <div key={uuid} className="Champions">
-          <img src={fullPortraitV2} alt="agents" width={480} height={500} />
+          <img
+            className="imgagents"
+            src={fullPortraitV2}
+            alt="agents"
+            width={480}
+            height={500}
+          />
           <Link to={`/agents/${uuid}`}>
             <p>{displayName}</p>
           </Link>

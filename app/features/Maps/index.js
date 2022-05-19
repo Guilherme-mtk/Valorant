@@ -21,9 +21,9 @@ const Mapas = () => {
   return (
     <Maps>
       <Header />
-      {maps.map(({ uuid, splash, displayName }) => (
+      {maps.map(({ uuid, displayIcon, displayName }) => (
         <div key={uuid} className="Mapas">
-          <img src={splash} alt="maps" width={480} height={500} />
+          <img src={displayIcon} alt="maps" width={480} height={500} />
           <Link to={`/maps/${uuid}`}>
             <p>{displayName}</p>
           </Link>

@@ -10,6 +10,7 @@ export const Container = styled.section`
   justify-content: center;
   background-image: url(${imghomes});
   background-position: center;
+  overflow-x: hidden;
 
   a {
     text-decoration: none;
@@ -33,5 +34,12 @@ export const Container = styled.section`
     font-size: 1.5rem;
     text-align: center;
     color: white;
+  }
+
+  @media (max-width: 700px) {
+    .imgagents {
+      width: 300px;
+      height: 300px;
+    }
   }
 `;
