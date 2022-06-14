@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { useInjectReducer, useInjectSaga } from 'redux-injectors';
 import { useDispatch, useSelector } from 'react-redux';
 import { useIntl } from 'react-intl';
-import { Link } from 'react-router-dom';
+
 import { getAgents, reducer } from './slice';
 import saga from './saga';
 import messages from './messages';
@@ -34,9 +34,7 @@ function Agents() {
             width={480}
             height={500}
           />
-          <Link to={`/agents/${uuid}`}>
-            <p>{displayName}</p>
-          </Link>
+          <p>{displayName}</p>
         </div>
       ))}
       <Helmet>

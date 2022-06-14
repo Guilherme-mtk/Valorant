@@ -35,5 +35,8 @@ export const Maps = styled.section`
     background-color: #ff4655;
   }
   @media (max-width: 700px) {
+    .mapas {
+      height: 300px;
+    }
   }
 `;

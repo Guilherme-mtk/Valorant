@@ -16,7 +16,7 @@ export const Weapons = styled.section`
   .Weapons {
     width: 20%;
     height: 10%;
-    background-color: #1b252d;
+    /* background-color: #1b252d; */
     margin: 20px 20px;
     background-color: #ff4655;
     border-radius: 5%;

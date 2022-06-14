@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useInjectReducer, useInjectSaga } from 'redux-injectors';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { getWeapons, reducer } from './slice';
 import saga from './saga';
 import selectWeapons from './selectors';
@@ -23,9 +22,7 @@ const Armas = () => {
       <Header />
       {weapons.map(({ uuid, displayName }) => (
         <div key={uuid} className="Weapons">
-          <Link to={`/weapons/${uuid}`}>
-            <p>{displayName}</p>
-          </Link>
+          <p>{displayName}</p>
         </div>
       ))}
     </Weapons>

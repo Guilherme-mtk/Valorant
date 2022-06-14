@@ -1,8 +1,8 @@
 {
   "name": "react-boilerplate",
+  "homepage": "https://github.com/Guilherme-mtk/Valorant.git",
   "version": "1.0.0",
   "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
-  "homepage": "https://github.com/Guilherme-mtk/Valorant.git",
   "repository": {
     "type": "git",
     "url": "git://github.com/pedro-victor/react-boilerplate.git"
