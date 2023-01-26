@@ -20,10 +20,9 @@ const Mapas = () => {
   return (
     <Maps>
       <Header />
-      {maps.map(({ uuid, splash, displayName }) => (
+      {maps.map(({ uuid, splash }) => (
         <div key={uuid} className="Mapas">
-          <img src={splash} alt="maps" width={480} height={500} />
-          <p>{displayName}</p>
+          <img src={splash} alt="maps" width={800} height={500} />
         </div>
       ))}
     </Maps>

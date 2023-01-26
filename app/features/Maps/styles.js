@@ -32,7 +32,6 @@ export const Maps = styled.section`
     font-size: 1.5rem;
     text-align: center;
     color: white;
-    background-color: #ff4655;
   }
   @media (max-width: 700px) {
     .mapas {
